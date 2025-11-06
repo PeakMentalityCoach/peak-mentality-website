@@ -4,14 +4,17 @@ Kajabi → WordPress + Elementor Pro migration toolkit with Answer Engine Optimi
 
 ## 📚 Documentation
 
+- **[DEMO_PREVIEW.md](DEMO_PREVIEW.md)** - 🎨 **Visual preview** of what your migrated site will look like
 - **[WORDPRESS_SETUP.md](WORDPRESS_SETUP.md)** - Complete WordPress plugin installation and configuration guide
 - **[RUNBOOK.md](RUNBOOK.md)** - Step-by-step execution order with acceptance checklist
+- **[examples/](examples/)** - Sample output files from migration scripts
 - **README.md** (this file) - Technical overview and feature documentation
 
 **Quick Start:**
-1. Read [WORDPRESS_SETUP.md](WORDPRESS_SETUP.md) to install required plugins
-2. Follow [RUNBOOK.md](RUNBOOK.md) to execute migration in correct order
-3. Use acceptance checklist to verify success
+1. **Preview the result** → [DEMO_PREVIEW.md](DEMO_PREVIEW.md) to see what you'll get
+2. **Install plugins** → [WORDPRESS_SETUP.md](WORDPRESS_SETUP.md) for WordPress setup
+3. **Run migration** → [RUNBOOK.md](RUNBOOK.md) for execution order
+4. **Verify success** → Use acceptance checklist in RUNBOOK.md
 
 ## Stack
 

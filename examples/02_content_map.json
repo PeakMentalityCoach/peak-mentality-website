@@ -1,0 +1,74 @@
+[
+  {
+    "source_url": "https://kajabi-site.com/",
+    "title": "Peak Mentality Coaching - Home",
+    "body_html": "<main><section class=\"hero\"><h1>Unlock elite focus for high performers</h1>...",
+    "target_url": "/",
+    "type": "page",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/about",
+    "title": "About Peak Mentality Coaching",
+    "body_html": "<main><h1>About Peak Mentality Coaching</h1>...",
+    "target_url": "/about",
+    "type": "page",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/services/executive-coaching",
+    "title": "Executive Coaching Services",
+    "body_html": "<main><h1>Executive Coaching</h1>...",
+    "target_url": "/executive-coaching-services",
+    "type": "page",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/services/workshops",
+    "title": "Team Workshops",
+    "body_html": "<main><h1>Team Workshops</h1>...",
+    "target_url": "/team-workshops",
+    "type": "page",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/speaking",
+    "title": "Speaking & Keynotes",
+    "body_html": "<main><h1>Speaking & Keynotes</h1>...",
+    "target_url": "/speaking",
+    "type": "page",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/case-studies",
+    "title": "Case Studies & Results",
+    "body_html": "<main><h1>Case Studies</h1>...",
+    "target_url": "/case-studies/case-studies-and-results",
+    "type": "page",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/blog/5-ways-to-improve-focus",
+    "title": "5 Ways to Improve Focus for High Performers",
+    "body_html": "<main><article><h1>5 Ways to Improve Focus for High Performers</h1>...",
+    "target_url": "/resources/5-ways-to-improve-focus-for-high-performers",
+    "type": "post",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/blog/mental-models-for-better-decisions",
+    "title": "Mental Models for Better Decisions",
+    "body_html": "<main><article><h1>Mental Models for Better Decisions</h1>...",
+    "target_url": "/resources/mental-models-for-better-decisions",
+    "type": "post",
+    "status": "to_migrate"
+  },
+  {
+    "source_url": "https://kajabi-site.com/contact",
+    "title": "Contact Us",
+    "body_html": "<main><h1>Contact Peak Mentality Coaching</h1>...",
+    "target_url": "/contact",
+    "type": "page",
+    "status": "to_migrate"
+  }
+]

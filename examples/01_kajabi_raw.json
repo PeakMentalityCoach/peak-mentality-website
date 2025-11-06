@@ -1,0 +1,47 @@
+[
+  {
+    "source_url": "https://kajabi-site.com/",
+    "title": "Peak Mentality Coaching - Home",
+    "body_html": "<main><section class=\"hero\"><h1>Unlock elite focus for high performers</h1><p>Evidence-based executive coaching that ships results, not excuses.</p><a href=\"/contact\">Book a Free Consult</a><img src=\"https://kajabi-cdn.com/images/hero-executive.jpg\" alt=\"Executive coaching\"></section><section><h2>How We Help</h2><div><h3>1-on-1 Executive Coaching</h3><p>Personalized coaching to break through mental barriers.</p></div><div><h3>Team Workshops</h3><p>High-impact workshops for better decision-making.</p></div></section></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/about",
+    "title": "About Peak Mentality Coaching",
+    "body_html": "<main><h1>About Peak Mentality Coaching</h1><p>We help high performers think clearer, execute faster, and win more.</p><h2>Our Approach</h2><p>Evidence-based coaching rooted in cognitive science and behavioral psychology.</p><h3>What makes Peak Mentality different from other coaches?</h3><p>We focus on evidence-based techniques proven to improve focus, decision-making, and execution. No woo-woo, just results.</p><h3>What industries do you specialize in?</h3><p>We work primarily with tech executives, startup founders, and financial services leaders—anyone managing high-stakes decisions under pressure.</p></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/services/executive-coaching",
+    "title": "Executive Coaching Services",
+    "body_html": "<main><h1>Executive Coaching</h1><p>1-on-1 coaching for high-performing leaders.</p><h2>The Process</h2><h3>What is the coaching process like?</h3><p>We start with a free 30-minute consult to understand your goals, then design a personalized coaching plan with weekly sessions, accountability check-ins, and practical exercises.</p><h3>How long does coaching typically take?</h3><p>Most clients see significant improvements within 8-12 weeks, with ongoing support available for sustained growth.</p><h3>What results can I expect from coaching?</h3><p>Clients typically see 30-50% improvement in decision-making speed, 15+ hours reclaimed per week, and measurable increases in team productivity within the first quarter.</p><img src=\"https://kajabi-cdn.com/images/coaching-session.jpg\" alt=\"One on one coaching\"></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/services/workshops",
+    "title": "Team Workshops",
+    "body_html": "<main><h1>Team Workshops</h1><p>Transform your team's performance with high-impact workshops.</p><h3>How do team workshops work?</h3><p>Workshops are 2-4 hour intensive sessions customized to your team's challenges. We cover decision frameworks, communication strategies, and execution acceleration techniques.</p><h3>Do you work with teams or just individuals?</h3><p>Both! We offer 1-on-1 executive coaching and team workshops customized to your organization's needs.</p></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/speaking",
+    "title": "Speaking & Keynotes",
+    "body_html": "<main><h1>Speaking & Keynotes</h1><p>Transformative keynotes on peak performance, resilience, and mental clarity.</p><h2>Topics</h2><ul><li>High-Performance Decision Making</li><li>Mental Models for Leaders</li><li>Execution Without Burnout</li></ul></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/case-studies",
+    "title": "Case Studies & Results",
+    "body_html": "<main><h1>Case Studies</h1><p>Real results from real clients.</p><h2>Sarah Chen - VP of Product, TechCorp</h2><p>Within 90 days, I increased my team's shipping velocity by 40% and reclaimed 15 hours per week. Peak Mentality's coaching is the real deal.</p><h2>Michael Rodriguez - Founder, FinTech Startup</h2><p>Peak Mentality helped me scale from $2M to $10M ARR without burning out. The decision frameworks alone were worth 10x the investment.</p></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/blog/5-ways-to-improve-focus",
+    "title": "5 Ways to Improve Focus for High Performers",
+    "body_html": "<main><article><h1>5 Ways to Improve Focus for High Performers</h1><p>If you're a high performer drowning in distractions, you're not alone.</p><h2>1. Time-Blocking</h2><p>Schedule your deep work in 90-minute blocks.</p><h3>How do I implement time-blocking effectively?</h3><p>Start with one deep work block per day. Put it on your calendar like a meeting. Treat it as non-negotiable.</p><h2>2. Single-Tasking</h2><p>Multitasking is a myth.</p><h3>What if my job requires constant context-switching?</h3><p>Batch similar tasks together. Respond to emails in 2-3 scheduled blocks instead of all day.</p><img src=\"https://kajabi-cdn.com/images/focus-workspace.jpg\" alt=\"Focused workspace\"></article></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/blog/mental-models-for-better-decisions",
+    "title": "Mental Models for Better Decisions",
+    "body_html": "<main><article><h1>Mental Models for Better Decisions</h1><p>Mental models are frameworks that help you make better decisions faster.</p><h2>First Principles Thinking</h2><p>Break down complex problems to their fundamental truths.</p><h2>Inversion</h2><p>Instead of asking 'How do I succeed?', ask 'How would I fail?'</p></article></main>"
+  },
+  {
+    "source_url": "https://kajabi-site.com/contact",
+    "title": "Contact Us",
+    "body_html": "<main><h1>Contact Peak Mentality Coaching</h1><p>Ready to level up? Book a free 30-minute consult.</p><form><input name=\"name\" placeholder=\"Your Name\"><input name=\"email\" placeholder=\"Email\"><textarea name=\"message\" placeholder=\"Tell us about your goals\"></textarea><button type=\"submit\">Send Message</button></form></main>"
+  }
+]
