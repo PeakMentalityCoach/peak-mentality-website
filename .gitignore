@@ -23,4 +23,6 @@ Thumbs.db
 # Migration data
 data/
 media/
+out/
+tmp/
 *.csv
