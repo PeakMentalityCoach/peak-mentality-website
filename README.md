@@ -2,6 +2,17 @@
 
 Kajabi → WordPress + Elementor Pro migration toolkit with Answer Engine Optimization (AEO) for AI crawlers.
 
+## 📚 Documentation
+
+- **[WORDPRESS_SETUP.md](WORDPRESS_SETUP.md)** - Complete WordPress plugin installation and configuration guide
+- **[RUNBOOK.md](RUNBOOK.md)** - Step-by-step execution order with acceptance checklist
+- **README.md** (this file) - Technical overview and feature documentation
+
+**Quick Start:**
+1. Read [WORDPRESS_SETUP.md](WORDPRESS_SETUP.md) to install required plugins
+2. Follow [RUNBOOK.md](RUNBOOK.md) to execute migration in correct order
+3. Use acceptance checklist to verify success
+
 ## Stack
 
 - **WordPress + Elementor Pro** - Content as clean HTML in `post_content`
@@ -141,49 +152,24 @@ npm run indexnow
 
 ## WordPress Setup
 
+**See [WORDPRESS_SETUP.md](WORDPRESS_SETUP.md) for complete plugin installation and configuration guide.**
+
 ### Required Plugins
 
-1. **Elementor Pro** (premium)
-2. **WP Rocket** or **LiteSpeed Cache**
-3. **Code Snippets** (free)
-4. **Polylang** (optional, free/pro)
+1. **Elementor Pro** (premium) - Visual page builder
+2. **WP Rocket** or **LiteSpeed Cache** - Caching and performance
+3. **Code Snippets** (free) - Inject analytics and A/B testing
+4. **Polylang** (optional) - EN/NO bilingual support
+5. **Redirection** (free) - Manage 301 redirects
+6. **ShortPixel** or **Jetpack Image CDN** (optional) - Image optimization
 
-### Deploy robots.txt
+### Quick Deploy Checklist
 
-1. Copy `robots.txt` to WordPress root (or edit via Yoast/Rank Math)
-2. Update sitemap URL to your domain
-3. Explicitly allows AI bots:
-   - GPTBot (OpenAI/ChatGPT)
-   - CCBot (Common Crawl/Claude)
-   - PerplexityBot (Perplexity AI)
-
-### Deploy Head Snippets
-
-1. Install **Code Snippets** plugin
-2. Create new snippet (HTML type)
-3. Copy content from `head-snippets.html`
-4. Replace `%PLAUSIBLE_DOMAIN%` with your actual domain
-5. Set to run on: "Front-end only"
-6. Activate snippet
-
-**Includes:**
-- Plausible Analytics
-- A/B testing (3 variants: A/B/C)
-- CTA click tracking
-- Reduced motion accessibility
-
-### Deploy IndexNow Key
-
-1. Run `npm run indexnow` to generate key file
-2. Upload `out/pmc-indexnow-key.txt` to WordPress root via FTP/File Manager
-3. Verify accessible at: `https://your-domain.com/pmc-indexnow-key.txt`
-
-### Deploy Redirects
-
-1. Open `out/redirects.htaccess`
-2. Copy all redirect rules
-3. Add to WordPress `.htaccess` file (before `# BEGIN WordPress`)
-4. Or use **Redirection** plugin (import CSV)
+- [ ] Install and configure all required plugins (see WORDPRESS_SETUP.md)
+- [ ] Deploy `robots.txt` with AI bot permissions
+- [ ] Add `head-snippets.html` via Code Snippets plugin
+- [ ] Upload IndexNow key file to site root
+- [ ] Import redirects via Redirection plugin or .htaccess
 
 ## AEO Features
 
@@ -313,14 +299,21 @@ tmp/
 
 ## Next Steps
 
-1. Review draft posts/pages in WordPress Admin
-2. Customize with Elementor Pro
-3. Add hero images and CTAs
-4. Publish content
-5. Deploy redirects
-6. Run AEO enhancement
-7. Test performance
-8. Ping IndexNow
+**See [RUNBOOK.md](RUNBOOK.md) for complete execution order with acceptance checklist.**
+
+**Quick workflow:**
+1. Install WordPress plugins → [WORDPRESS_SETUP.md](WORDPRESS_SETUP.md)
+2. Run migration scripts → [RUNBOOK.md](RUNBOOK.md)
+3. Review and customize content with Elementor Pro
+4. Deploy redirects, robots.txt, and head snippets
+5. Verify acceptance checklist → [RUNBOOK.md](RUNBOOK.md#acceptance-checklist)
+6. Monitor performance and analytics
+
+## Support
+
+- **Issues & Bugs**: Open issue in repository
+- **Documentation**: See WORDPRESS_SETUP.md and RUNBOOK.md
+- **Performance**: Run `npm run perf` to test budgets
 
 ## License
 
