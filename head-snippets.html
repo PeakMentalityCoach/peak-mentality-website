@@ -1,0 +1,25 @@
+<!-- Plausible -->
+<script defer data-domain="%PLAUSIBLE_DOMAIN%" src="https://plausible.io/js/script.js"></script>
+
+<!-- Minimal A/B and CTA tracking -->
+<script>
+(function(){
+  var key="pmc_ab_v1"; var v=localStorage.getItem(key);
+  if(!v){ var r=Math.random(); v=r<0.34?"A":(r<0.67?"B":"C"); localStorage.setItem(key,v); }
+  document.documentElement.setAttribute("data-ab", v);
+  window.abVariant=v;
+  document.addEventListener("click", function(e){
+    var t=e.target.closest("[data-cta-primary]");
+    if(t && window.plausible) plausible("CTA Click", { props:{ id:t.getAttribute("data-cta-primary"), variant:v } });
+  }, true);
+})();
+</script>
+<style>
+:root { --hero-h1:"Unlock elite focus"; }
+html[data-ab="B"] { --hero-h1:"High-performance coaching that ships results"; }
+html[data-ab="C"] { --hero-h1:"Think clearer. Execute faster. Win more."; }
+.hero h1::before { content: var(--hero-h1); }
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}
+}
+</style>

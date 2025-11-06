@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Explicit AI bots allowed
+User-agent: GPTBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://YOUR-DOMAIN.com/wp-sitemap.xml
