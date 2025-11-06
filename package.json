@@ -1,0 +1,31 @@
+{
+  "name": "pmc-wp-migrator-aeo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "crawl": "tsx src/01_crawl_kajabi.ts",
+    "map": "tsx src/02_map_information_arch.ts",
+    "media": "tsx src/03_upload_media.ts",
+    "migrate": "tsx src/04_migrate_posts.ts",
+    "localize": "tsx src/05_localize_polylang.ts",
+    "redirects": "tsx src/06_generate_redirects.ts",
+    "aeo": "tsx src/09_aeo_enhance.ts",
+    "indexnow": "tsx src/10_indexnow_ping.ts",
+    "perf": "tsx src/08_lighthouse_ci.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "csv-stringify": "^6.5.0",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0",
+    "lighthouse": "^12.3.0",
+    "sharp": "^0.33.5",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
