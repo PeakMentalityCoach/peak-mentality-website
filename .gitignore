@@ -27,3 +27,4 @@ out/
 tmp/
 *.csv
 !examples/*.csv
+html-audit.tar.gz
