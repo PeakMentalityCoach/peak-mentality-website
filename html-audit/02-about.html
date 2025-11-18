@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Peak Mentality - Evidence-Based Executive Coaching</title>
+  <meta name="description" content="We help high-performing executives think clearer, execute faster, and win more through evidence-based coaching rooted in cognitive science.">
+
+  <style>
+    /* BASE STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* HEADER */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    nav a {
+      margin-left: 30px;
+      color: #4a4a4a;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 100px 0 80px;
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #0066cc;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      font-weight: 800;
+      margin-bottom: 24px;
+      color: #1a1a1a;
+    }
+
+    .lead {
+      font-size: 24px;
+      color: #4a4a4a;
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    /* STORY SECTION */
+    .story {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+
+    .story-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .story h2 {
+      font-size: 42px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .story p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #2a2a2a;
+      margin-bottom: 24px;
+    }
+
+    .story strong {
+      color: #0066cc;
+      font-weight: 600;
+    }
+
+    .pullquote {
+      background: #f0f4f8;
+      border-left: 4px solid #0066cc;
+      padding: 30px 40px;
+      margin: 40px 0;
+      font-size: 22px;
+      font-style: italic;
+      color: #1a1a1a;
+    }
+
+    /* DIFFERENCE SECTION */
+    .difference {
+      padding: 80px 0;
+      background: #f8f9fa;
+    }
+
+    .difference h2 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 60px;
+      font-weight: 700;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .comparison-card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .comparison-card.other {
+      border-top: 4px solid #dc3545;
+    }
+
+    .comparison-card.us {
+      border-top: 4px solid #4caf50;
+    }
+
+    .comparison-label {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .comparison-card.other .comparison-label {
+      color: #dc3545;
+    }
+
+    .comparison-card.us .comparison-label {
+      color: #4caf50;
+    }
+
+    .comparison-list {
+      list-style: none;
+    }
+
+    .comparison-list li {
+      padding: 12px 0;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #2a2a2a;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .comparison-list li:last-child {
+      border-bottom: none;
+    }
+
+    .comparison-card.other .comparison-list li::before {
+      content: "❌ ";
+      margin-right: 8px;
+    }
+
+    .comparison-card.us .comparison-list li::before {
+      content: "✅ ";
+      margin-right: 8px;
+    }
+
+    /* APPROACH SECTION */
+    .approach {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+
+    .approach h2 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 60px;
+      font-weight: 700;
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    .principle-card {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .principle-icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .principle-card h3 {
+      font-size: 22px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .principle-card p {
+      font-size: 16px;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    /* WHO SECTION */
+    .who {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      color: #ffffff;
+    }
+
+    .who h2 {
+      font-size: 42px;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .who-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .who p {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      opacity: 0.95;
+    }
+
+    .client-types {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .client-type {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .client-type-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .client-type h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .client-type p {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    /* CTA SECTION */
+    .cta-final {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .cta-final p {
+      font-size: 22px;
+      margin-bottom: 40px;
+      opacity: 0.95;
+    }
+
+    .cta-primary {
+      display: inline-block;
+      background: #ffffff;
+      color: #0066cc;
+      padding: 18px 48px;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .cta-primary:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1a1a1a;
+      color: #9e9e9e;
+      padding: 60px 0 30px;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-nav a {
+      color: #9e9e9e;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-nav a:hover {
+      color: #ffffff;
+    }
+
+    .footer-copyright {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      .comparison-grid,
+      .principles-grid,
+      .client-types {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="header-content">
+      <a href="/" class="logo">Peak Mentality</a>
+      <nav>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/case-studies">Results</a>
+        <a href="/resources">Resources</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!--
+  ═══════════════════════════════════════════════════════════════
+  ABOUT PAGE - COPYWRITING FRAMEWORK
+  ═══════════════════════════════════════════════════════════════
+
+  EXPERT NOTES:
+
+  About pages are NOT about you—they're about your CUSTOMER.
+
+  Common mistake: "We're a coaching company founded in 2015..."
+  Better approach: "You're drowning in meetings. We help you reclaim your time."
+
+  COPYWRITING FRAMEWORK:
+
+  1. LEAD WITH CUSTOMER (not company history)
+     - Start with their pain/goal
+     - Then explain how you solve it
+
+  2. DIFFERENTIATION (What makes you different?)
+     - Don't just say "we're better"
+     - Show SPECIFIC differences
+
+  3. PROOF (Why should I believe you?)
+     - Credentials, results, testimonials
+     - Evidence-based approach
+
+  4. WHO WE SERVE (Am I the right fit?)
+     - Specific industries/roles
+     - Helps visitor self-select
+
+  ═══════════════════════════════════════════════════════════════
+-->
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">Our Mission</span>
+
+      <!-- COPYWRITING NOTE: Customer-centric headline -->
+      <h1>
+        We Help High Performers<br>
+        Think Clearer, Execute Faster, Win More
+      </h1>
+
+      <p class="lead">
+        No fluff. No woo-woo. Just evidence-based frameworks that help you
+        ship results without burning out.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--
+  ═══════════════════════════════════════════════════════════════
+  STORY SECTION - BRAND NARRATIVE
+  ═══════════════════════════════════════════════════════════════
+
+  EXPERT NOTES:
+
+  Good brand stories follow this structure:
+  1. Problem you experienced personally
+  2. What you tried that didn't work
+  3. Breakthrough moment
+  4. Mission now
+
+  This creates IDENTIFICATION with reader.
+
+  PSYCHOLOGY:
+  - "I've been there" = builds trust
+  - "I tried everything" = shows you understand
+  - "Then I discovered" = creates curiosity
+  - "Now I help others" = altruistic positioning
+
+  ═══════════════════════════════════════════════════════════════
+-->
+<section class="story">
+  <div class="container">
+    <div class="story-content">
+      <h2>The Problem We Solve</h2>
+
+      <p>
+        Most high performers hit a wall. Not from lack of talent or drive—but from <strong>decision
+        fatigue, calendar chaos, and constant context-switching</strong>.
+      </p>
+
+      <p>
+        You're "successful" by every external measure. But internally? You're exhausted. Your calendar
+        is 80% meetings. You can't focus for more than 10 minutes. Every decision feels like a coin flip.
+        You're busy all day but never making progress on what actually matters.
+      </p>
+
+      <p>
+        Sound familiar? <strong>You're not broken. Your systems are.</strong>
+      </p>
+
+      <div class="pullquote">
+        "Most coaches tell you to work harder. We help you work smarter—by rewiring how you think,
+        decide, and execute."
+      </div>
+
+      <p>
+        Peak Mentality was born from a simple observation: <strong>high performers don't need motivation—they
+        need better mental models.</strong>
+      </p>
+
+      <p>
+        After coaching 200+ executives, we've seen the pattern. The highest performers aren't superhuman.
+        They just have better frameworks for:
+      </p>
+
+      <ul style="font-size: 18px; line-height: 2; margin: 30px 0; color: #2a2a2a;">
+        <li><strong>Focus</strong> — Protecting deep work time and eliminating distractions</li>
+        <li><strong>Decisions</strong> — Making high-stakes calls faster without second-guessing</li>
+        <li><strong>Execution</strong> — Shipping results without burning out</li>
+      </ul>
+
+      <p>
+        Our mission? <strong>Give you those frameworks.</strong> No fluff, no 300-page books, no
+        vague platitudes. Just proven techniques rooted in cognitive science and behavioral psychology.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--
+  ═══════════════════════════════════════════════════════════════
+  DIFFERENCE SECTION - COMPETITIVE DIFFERENTIATION
+  ═══════════════════════════════════════════════════════════════
+
+  EXPERT NOTES:
+
+  This is your DIFFERENTIATION section.
+
+  Most coaches fail to clearly explain what makes them different.
+  Saying "we're better" isn't enough—you need to show SPECIFIC differences.
+
+  COPYWRITING STRATEGY:
+
+  1. SIDE-BY-SIDE COMPARISON
+     - Shows "other coaches" vs "us"
+     - Makes differences crystal clear
+
+  2. SPECIFIC CLAIMS
+     - Not "we're evidence-based" (everyone says this)
+     - Instead "we use frameworks from cognitive science research"
+
+  3. VISUAL CONTRAST
+     - Red (other) vs Green (us)
+     - X vs Checkmark
+     - Makes scanning easy
+
+  This section answers: "Why should I choose YOU over everyone else?"
+
+  ═══════════════════════════════════════════════════════════════
+-->
+<section class="difference">
+  <div class="container">
+    <h2>What Makes Peak Mentality Different?</h2>
+
+    <div class="comparison-grid">
+      <!-- OTHER COACHES -->
+      <div class="comparison-card other">
+        <div class="comparison-label">Most Executive Coaches</div>
+        <ul class="comparison-list">
+          <li>Vague "mindset" advice</li>
+          <li>Generic frameworks (one-size-fits-all)</li>
+          <li>Focus on "limiting beliefs" and feelings</li>
+          <li>No measurable outcomes or accountability</li>
+          <li>Consultants posing as coaches</li>
+          <li>Long-term dependency (12+ months)</li>
+        </ul>
+      </div>
+
+      <!-- US -->
+      <div class="comparison-card us">
+        <div class="comparison-label">Peak Mentality Coaching</div>
+        <ul class="comparison-list">
+          <li>Specific, actionable techniques</li>
+          <li>Customized to your exact situation</li>
+          <li>Focus on systems, frameworks, and execution</li>
+          <li>Measurable results (time reclaimed, velocity, etc.)</li>
+          <li>Evidence-based methods rooted in science</li>
+          <li>Short-term engagement (8-12 weeks to results)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  ═══════════════════════════════════════════════════════════════
+  APPROACH SECTION - CREDIBILITY & METHOD
+  ═══════════════════════════════════════════════════════════════
+
+  EXPERT NOTES:
+
+  This section builds CREDIBILITY by explaining your methodology.
+
+  WHY IT WORKS:
+  - Shows you have a SYSTEM (not just winging it)
+  - "Evidence-based" becomes believable (you show the evidence)
+  - Builds trust through transparency
+
+  COPYWRITING TIP:
+  - Use icons for visual appeal
+  - Keep descriptions concise (scanning > reading)
+  - Focus on BENEFITS of each principle
+
+  ═══════════════════════════════════════════════════════════════
+-->
+<section class="approach">
+  <div class="container">
+    <h2>Our Approach</h2>
+
+    <div class="principles-grid">
+      <!-- PRINCIPLE 1 -->
+      <div class="principle-card">
+        <div class="principle-icon">🧠</div>
+        <h3>Evidence-Based</h3>
+        <p>
+          Every technique is rooted in cognitive science, behavioral psychology, and proven frameworks—not
+          motivational fluff.
+        </p>
+      </div>
+
+      <!-- PRINCIPLE 2 -->
+      <div class="principle-card">
+        <div class="principle-icon">🎯</div>
+        <h3>Results-Oriented</h3>
+        <p>
+          We track specific outcomes: hours reclaimed, decision speed, shipping velocity. If it doesn't
+          move the needle, we don't waste your time.
+        </p>
+      </div>
+
+      <!-- PRINCIPLE 3 -->
+      <div class="principle-card">
+        <div class="principle-icon">⚡</div>
+        <h3>Fast Implementation</h3>
+        <p>
+          No 12-month dependencies. Most clients see measurable improvements within 4-8 weeks. We give you
+          the frameworks, you own the results.
+        </p>
+      </div>
+
+      <!-- PRINCIPLE 4 -->
+      <div class="principle-card">
+        <div class="principle-icon">🔬</div>
+        <h3>Tailored to You</h3>
+        <p>
+          Your calendar, your team, your decision patterns. We don't do cookie-cutter. Every coaching plan
+          is customized to your specific situation.
+        </p>
+      </div>
+
+      <!-- PRINCIPLE 5 -->
+      <div class="principle-card">
+        <div class="principle-icon">📊</div>
+        <h3>No BS Policy</h3>
+        <p>
+          We'll tell you if coaching isn't the right solution. If you need a consultant, we'll say so.
+          If you need therapy, we'll refer you. Honesty > sales.
+        </p>
+      </div>
+
+      <!-- PRINCIPLE 6 -->
+      <div class="principle-card">
+        <div class="principle-icon">🚀</div>
+        <h3>Execution, Not Theory</h3>
+        <p>
+          Every session ends with clear action items. No philosophical discussions about "purpose."
+          Just practical frameworks you can implement immediately.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  ═══════════════════════════════════════════════════════════════
+  WHO SECTION - IDEAL CLIENT PROFILE
+  ═══════════════════════════════════════════════════════════════
+
+  EXPERT NOTES:
+
+  This section helps visitors SELF-SELECT.
+
+  WHY IT MATTERS:
+  - Shows you specialize (not generalist)
+  - Helps right people identify themselves
+  - Filters out bad fits (saves time on both sides)
+
+  COPYWRITING STRATEGY:
+  - Be specific about industries/roles
+  - Use "you" language
+  - Make visitor think "This is ME"
+
+  PSYCHOLOGY:
+  - Exclusivity increases perceived value
+  - "High-stakes decisions" attracts high performers
+
+  ═══════════════════════════════════════════════════════════════
+-->
+<section class="who">
+  <div class="container">
+    <h2>Who We Work With</h2>
+
+    <div class="who-content">
+      <p>
+        We specialize in <strong>high-performing executives and founders</strong> in high-stakes,
+        high-pressure environments—people managing complex decisions under tight timelines.
+      </p>
+
+      <p>
+        If you're managing a team, shipping products, or scaling a company, and you're drowning in
+        meetings, context-switching, and decision fatigue—<strong>we can help</strong>.
+      </p>
+    </div>
+
+    <div class="client-types">
+      <!-- TYPE 1 -->
+      <div class="client-type">
+        <div class="client-type-icon">💻</div>
+        <h3>Tech Executives</h3>
+        <p>
+          VPs, Directors, CTOs managing technical teams and shipping high-velocity products.
+        </p>
+      </div>
+
+      <!-- TYPE 2 -->
+      <div class="client-type">
+        <div class="client-type-icon">🚀</div>
+        <h3>Startup Founders</h3>
+        <p>
+          Founders scaling from $1M to $10M+ who need to execute faster without burning out.
+        </p>
+      </div>
+
+      <!-- TYPE 3 -->
+      <div class="client-type">
+        <div class="client-type-icon">💼</div>
+        <h3>Financial Leaders</h3>
+        <p>
+          Finance, PE, VC professionals making high-stakes decisions under pressure.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Ready to Upgrade Your Performance?</h2>
+    <p>
+      Book a free 30-minute strategy call. Walk away with actionable insights—even if we don't work together.
+    </p>
+
+    <a href="/contact" class="cta-primary">
+      Book Your Free Strategy Call
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav">
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/case-studies">Case Studies</a>
+      <a href="/resources">Resources</a>
+      <a href="/speaking">Speaking</a>
+      <a href="/contact">Contact</a>
+      <a href="/answers">Answers</a>
+    </nav>
+    <div class="footer-copyright">
+      &copy; 2024 Peak Mentality Coaching. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
